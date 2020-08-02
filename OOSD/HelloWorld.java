@@ -1,5 +1,7 @@
-class helloworld {
-    public static void main(final String[] args) {
-        System.out.println("I am the World!");
+import java.lang.*;
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        return;
     }
 }
