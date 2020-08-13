@@ -1,5 +1,13 @@
 public class Circle {
+    public static int numCircles = 0;
     public double centreX, centreY, radius;
+    // flexible constructor
+    public Circle(double x, double y, double r) {
+        centreX = x;
+        centreY = y;
+        radius = r;
+        numCircles++;
+    }
     public double getCentreX() {
         return centreX;
     }
@@ -28,17 +36,5 @@ public class Circle {
     }
     public void resize(double factor) {
         radius = radius * factor;
-    }
-    // default constructor
-    public Circle() {
-        centreX = 10.0;
-        centreY = 10.0;
-        radius = 5.0;
-    }
-    // more flexible constructor
-    public Circle(double newCentreX, double newCentreY, double newRadius) {
-        centreX = newCentreX;
-        centreY = newCentreY;
-        radius = newRadius;
     }
 }
