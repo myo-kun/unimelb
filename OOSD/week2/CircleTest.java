@@ -1,6 +1,6 @@
 public class CircleTest {
     public static void main(String[] args) {
-        Circle aCircle = new Circle();
+        Circle aCircle = new Circle(10, 14, 15);
         aCircle.setCentreX(10.0);
         aCircle.setCentreY(20.0);
         aCircle.setRadius(5.0);
