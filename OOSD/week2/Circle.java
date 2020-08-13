@@ -2,6 +2,15 @@ public class Circle {
     public static int numCircles = 0;
     public double centreX, centreY, radius;
     // flexible constructor
+    Circle (Circle aCircle) {
+        if (aCircle == null) {
+            System.out.println("Fatal Error.");
+            System.exit(0);
+        }
+        this.centreX = aCircle.centreX;
+        this.centreY = aCircle.centreY;
+        this.radius = aCircle.radius;
+    }
     public Circle(double x, double y, double r) {
         centreX = x;
         centreY = y;
@@ -37,4 +46,11 @@ public class Circle {
     public void resize(double factor) {
         radius = radius * factor;
     }
+    public boolean equals(Circle circle) {
+        return Double.compare(circle.centreX, centreX) == 0 &&
+                Double.compare(circle.centreY, centreY) == 0 &&
+                Double.compare(circle.radius, radius) == 0;
+    }
+    public String toString() { return "I am a Circle with {" + "centreX=" + centreX + ", centreY=" + centreY + ", radius=" + radius + '}'; }
+    public static void printNumCircles() { System.out.println("Number of circles = " + numCircles); }
 }
