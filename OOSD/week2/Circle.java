@@ -29,4 +29,16 @@ public class Circle {
     public void resize(double factor) {
         radius = radius * factor;
     }
+    // default constructor
+    public Circle {
+        centreX = 10.0;
+        centreY = 10.0;
+        radius = 5.0;
+    }
+    // more flexible constructor
+    public Circle(double newCentreX, double newCentreY, double newRadius) {
+        centreX = newCentreX;
+        centreY = newCentreY;
+        radius = newRadius;
+    }
 }
