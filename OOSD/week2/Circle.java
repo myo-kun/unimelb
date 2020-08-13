@@ -1,6 +1,6 @@
 public class Circle {
     public double centreX, centreY, radius;
-    public double getCenterX() {
+    public double getCentreX() {
         return centreX;
     }
     public void setCentreX(double centreX) {
@@ -30,7 +30,7 @@ public class Circle {
         radius = radius * factor;
     }
     // default constructor
-    public Circle {
+    public Circle() {
         centreX = 10.0;
         centreY = 10.0;
         radius = 5.0;
